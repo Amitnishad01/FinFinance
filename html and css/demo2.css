@@ -1,0 +1,27 @@
+
+/* animation use in heading  */
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }
+  
+  .header h1 {
+    animation: slideIn 1s ease forwards;
+  }
+
+/* -------------------------------------- */
+body {
+    background-image: url('https://th.bing.com/th/id/OIP.RxLtOxp80VIbxShoEPqk8wHaE7?w=1081&h=720&rs=1&pid=ImgDetMain'); /* Replace 'your-transparent-image.png' with the URL or path to your transparent image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif; /* Use a professional font */
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="login.css"> -->
+    <link rel="stylesheet" href="manu.css">
+    <link rel="stylesheet" href="file.css">
+    <link rel="stylesheet" href="formbox.css">
+</head>
+<body>
+ <div class="header">
+    <h1>FinFinance Pvt LTD</h1>
+    <nav>
+        <ul class="menu">
+            
+            <li class=""><a href="home.html">Home</a></li>
+            <li><a href="Login.html">Login</a></li>
+            <li class="active" ><a href="LoanRequest.html">Loan Request</a></li>
+            <li><a href="LoanPayment.html">Loan Payment</a></li>
+            <li><a href="AgentLoanRecovery.html">Agent Loan Recovery</a></li>
+        </ul>
+    </nav>
+  </div>
+    <div class="container">
+        
+        <h4>Welcom to FinFinance, Please submit below detail for loan approval
+        </h4>
+    
+        <form name="regtration" class="registartion-form"  ></form>
+          <table>
+            <tr>
+                <td><label for=" First Name">First Name:</label></td>
+                <td><input type="text" name="Name" id="Name" placeholder="Name"></td>
+              </tr>
+              <tr>
+                <td><label for="Last name">Last Name:</label></td>
+                <td><input type="text" name="last name" id="last name"></td>
+              </tr>
+              <tr>
+                
+              <td><label for="DOB">DOB:</label></td>
+              <td><input type="date" name="date" id="date of birth"></td>
+
+            </tr>
+
+            <tr>
+                <td><label for="Number">Phone Number:</label></td>
+                <td><input type="tel" name="Number" id="Number"></td>
+              </tr>
+              <tr>
+                <td><label for="Alternate Number">Alternate Number:</label></td>
+                <td><input type="tel" name="Alternate Number" id="Alternate Number"></td>
+              </tr>
+              <tr>
+                <td><label for="address">Address:</label></td>
+                <td><input type="text" name="address" id="address"></td>
+              </tr>
+            
+            <tr>
+              <td><label for="Loan Amount">Loan Amount:</label></td>
+              <td><input type="text" name="Loan Amount" id="Loan Amount" placeholder=" Loan Amount"></td>
+            </tr>
+            <tr>
+                <td><label for="Loan Duration">Loan Duration:</label></td>
+                <td><input type="text" name="Loan Duration" id="Loan Duration" placeholder="Loan Duration "></td>
+              </tr>
+            
+              <td colspan="2">
+                <button type="submit" >Submit</button>
+                <button type="reset" onclick="resetForm()">Reset</button>
+        
+            </td>
+              </tr>
+          </table>
+        </form>
+      </div>
+</body>
+</html> 

@@ -1,0 +1,85 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Registration Form</title>
+      <link rel="stylesheet" href="manu.css">
+      <link rel="stylesheet" href="file.css">
+      <link rel="stylesheet" href="formbox.css">
+      <script src="home.js"></script>
+  </head>
+  <body>
+      <div class="header">
+          <h1>FinFinance Pvt LTD</h1>
+          <nav>
+              <ul class="menu">
+                  <li class="active"><a href="home.html">Home</a></li>
+                  <li><a href="Login.html">Login</a></li>
+                  <li><a href="LoanRequest.html">Loan Request</a></li>
+                  <li><a href="LoanPayment.html">Loan Payment</a></li>
+                  <li><a href="AgentLoanRecovery.html">Agent Loan Recovery</a></li>
+              </ul>
+          </nav>
+      </div>
+      <div class="container">
+          <h4>Please fill below detail to register</h4>
+          <form name="registration" class="registration-form" onsubmit="return validateForm()">
+              <table>
+                  <tr>
+                      <td><label for="firstName">First Name:</label></td>
+                      <td><input type="text" name="firstName" id="firstName" placeholder="First Name" required></td>
+                  </tr>
+                  <tr>
+                      <td><label for="lastName">Last Name:</label></td>
+                      <td><input type="text" name="lastName" id="lastName" placeholder="Last Name" required></td>
+                  </tr>
+                  <tr>
+                      <td><label for="dob">DOB:</label></td>
+                      <td><input type="date" name="dob" id="dob" required></td>
+                  </tr>
+                  <tr>
+                      <td><label for="phoneNumber">Phone Number:</label></td>
+                      <td><input type="tel" name="phoneNumber" id="phoneNumber" placeholder="1234567890" required pattern="[0-9]{10}"></td>
+                  </tr>
+                  <tr>
+                      <td><label for="address">Address:</label></td>
+                      <td><input type="text" name="address" id="address" required></td>
+                  </tr>
+                  <tr>
+                      <td><label for="email">Email:</label></td>
+                      <td><input type="email" name="email" id="email" placeholder="Email" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" name="password" id="password" placeholder="Password" required></td>
+                </tr>
+                <tr>
+                    <td><label for="repassword">Re-password:</label></td>
+                    <td><input type="password" name="repassword" id="repassword" placeholder="Re-enter Password" required></td>
+                </tr>
+                  <tr>
+                      <td colspan="2">
+                          <button type="submit" >Submit</button>
+                          <button type="reset" onclick="resetForm()">Reset</button>
+                          <button type="button" onclick="redirectToLoginPage()">Already registered? Login</button>
+                      </td>
+                  </tr>
+              </table>
+          </form>
+      </div> 
+      <script>
+        function validateForm() {
+            var password = document.getElementById("password").value;
+            var repassword = document.getElementById("repassword").value;
+
+            if (password !== repassword) {
+                alert("Passwords do not match!");
+                return false; // Prevent form submission
+            }
+            return true; // Allow form submission
+        }
+    </script>
+  </body>
+  </html>

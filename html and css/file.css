@@ -1,0 +1,137 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 50%; /* Adjust the width as needed */
+  margin: 50px auto; /* Center the container horizontally */
+}
+
+.registration-form {
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table td {
+  padding: 10px;
+  text-align: left;
+}
+
+table td:first-child {
+  width: 30%; /* Adjust the width of the first column */
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+  width: calc(100% - 20px); /* Subtract padding from width */
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+/* button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #0056b3;
+} */
+.header {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* --------------------------------------------------------- */
+.menu a:hover {
+  color: red; /* Change text color to red when hovered */
+  font-weight: bold; /* Make text bold when hovered */
+  text-decoration: underline; /* Underline text when hovered */
+}
+
+@keyframes slideIn {
+  0% {
+      transform: translateY(-100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+.header h1 {
+  animation: slideIn 1s ease forwards;
+}
+
+/* ----------------------------------------------------- */
+
+
+/* animation use in heading  */
+
+@keyframes slideIn {
+  0% {
+      transform: translateY(-100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+.header h1 {
+  animation: slideIn 1s ease forwards;
+}
+
+/* -------------------------------------- */
+/* Common button styles */
+button {
+  background-color: #68809a; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none; /* Remove button border */
+  padding: 8px 16px; /* Button padding */
+  font-size: 14px; /* Button font size */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and text color */
+  border-radius: 5px; /* Rounded corners */
+  animation: buttonScale 0.3s ease; /* Animation for scaling */
+}
+
+/* Hover effect for all buttons */
+button:hover {
+  filter: brightness(85%); /* Decrease brightness on hover */
+}
+
+/* Animation for scaling */
+@keyframes buttonScale {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+
+
+
+
+
